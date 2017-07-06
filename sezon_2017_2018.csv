@@ -1,0 +1,241 @@
+Data;Gospodarz;Gosc
+2017-07-15;Arka Gdynia;Śląsk Wrocław
+2017-07-15;Termalica Bruk-Bet Nieciecza;Jagiellonia Białystok
+2017-07-15;Cracovia;Piast Gliwice
+2017-07-15;Górnik Zabrze;Legia Warszawa
+2017-07-15;Korona Kielce;Zagłębie Lubin
+2017-07-15;Lech Poznań;Sandecja Nowy Sącz
+2017-07-15;Pogoń Szczecin;Wisła Kraków
+2017-07-15;Wisła Płock;Lechia Gdańsk
+2017-07-22;Jagiellonia Białystok;Górnik Zabrze
+2017-07-22;Zagłębie Lubin;Śląsk Wrocław
+2017-07-22;Lechia Gdańsk;Cracovia
+2017-07-22;Legia Warszawa;Korona Kielce
+2017-07-22;Piast Gliwice;Pogoń Szczecin
+2017-07-22;Sandecja Nowy Sącz;Arka Gdynia
+2017-07-22;Wisła Kraków;Termalica Bruk-Bet Nieciecza
+2017-07-22;Wisła Płock;Lech Poznań
+2017-07-29;Arka Gdynia;Wisła Płock
+2017-07-29;Termalica Bruk-Bet Nieciecza;Zagłębie Lubin
+2017-07-29;Górnik Zabrze;Wisła Kraków
+2017-07-29;Korona Kielce;Cracovia
+2017-07-29;Lech Poznań;Piast Gliwice
+2017-07-29;Legia Warszawa;Sandecja Nowy Sącz
+2017-07-29;Pogoń Szczecin;Jagiellonia Białystok
+2017-07-29;Śląsk Wrocław;Lechia Gdańsk
+2017-08-05;Arka Gdynia;Korona Kielce
+2017-08-05;Termalica Bruk-Bet Nieciecza;Legia Warszawa
+2017-08-05;Cracovia;Lech Poznań
+2017-08-05;Jagiellonia Białystok;Sandecja Nowy Sącz
+2017-08-05;Zagłębie Lubin;Pogoń Szczecin
+2017-08-05;Lechia Gdańsk;Górnik Zabrze
+2017-08-05;Piast Gliwice;Śląsk Wrocław
+2017-08-05;Wisła Płock;Wisła Kraków
+2017-08-12;Górnik Zabrze;Arka Gdynia
+2017-08-12;Korona Kielce;Jagiellonia Białystok
+2017-08-12;Lech Poznań;Zagłębie Lubin
+2017-08-12;Legia Warszawa;Piast Gliwice
+2017-08-12;Pogoń Szczecin;Lechia Gdańsk
+2017-08-12;Sandecja Nowy Sącz;Wisła Płock
+2017-08-12;Śląsk Wrocław;Termalica Bruk-Bet Nieciecza
+2017-08-12;Wisła Kraków;Cracovia
+2017-08-19;Arka Gdynia;Pogoń Szczecin
+2017-08-19;Termalica Bruk-Bet Nieciecza;Lech Poznań
+2017-08-19;Cracovia;Górnik Zabrze
+2017-08-19;Jagiellonia Białystok;Śląsk Wrocław
+2017-08-19;Zagłębie Lubin;Wisła Kraków
+2017-08-19;Lechia Gdańsk;Sandecja Nowy Sącz
+2017-08-19;Piast Gliwice;Korona Kielce
+2017-08-19;Wisła Płock;Legia Warszawa
+2017-08-26;Górnik Zabrze;Wisła Płock
+2017-08-26;Jagiellonia Białystok;Piast Gliwice
+2017-08-26;Korona Kielce;Termalica Bruk-Bet Nieciecza
+2017-08-26;Lech Poznań;Arka Gdynia
+2017-08-26;Legia Warszawa;Zagłębie Lubin
+2017-08-26;Sandecja Nowy Sącz;Pogoń Szczecin
+2017-08-26;Śląsk Wrocław;Cracovia
+2017-08-26;Wisła Kraków;Lechia Gdańsk
+2017-09-09;Arka Gdynia;Wisła Kraków
+2017-09-09;Termalica Bruk-Bet Nieciecza;Górnik Zabrze
+2017-09-09;Cracovia;Jagiellonia Białystok
+2017-09-09;Zagłębie Lubin;Wisła Płock
+2017-09-09;Korona Kielce;Sandecja Nowy Sącz
+2017-09-09;Piast Gliwice;Lechia Gdańsk
+2017-09-09;Pogoń Szczecin;Lech Poznań
+2017-09-09;Śląsk Wrocław;Legia Warszawa
+2017-09-16;Arka Gdynia;Zagłębie Lubin
+2017-09-16;Górnik Zabrze;Śląsk Wrocław
+2017-09-16;Lech Poznań;Korona Kielce
+2017-09-16;Lechia Gdańsk;Jagiellonia Białystok
+2017-09-16;Legia Warszawa;Cracovia
+2017-09-16;Sandecja Nowy Sącz;Termalica Bruk-Bet Nieciecza
+2017-09-16;Wisła Kraków;Piast Gliwice
+2017-09-16;Wisła Płock;Pogoń Szczecin
+2017-09-23;Termalica Bruk-Bet Nieciecza;Lechia Gdańsk
+2017-09-23;Cracovia;Wisła Płock
+2017-09-23;Jagiellonia Białystok;Legia Warszawa
+2017-09-23;Zagłębie Lubin;Sandecja Nowy Sącz
+2017-09-23;Korona Kielce;Wisła Kraków
+2017-09-23;Piast Gliwice;Arka Gdynia
+2017-09-23;Pogoń Szczecin;Górnik Zabrze
+2017-09-23;Śląsk Wrocław;Lech Poznań
+2017-09-30;Arka Gdynia;Cracovia
+2017-09-30;Górnik Zabrze;Piast Gliwice
+2017-09-30;Lech Poznań;Legia Warszawa
+2017-09-30;Lechia Gdańsk;Zagłębie Lubin
+2017-09-30;Pogoń Szczecin;Korona Kielce
+2017-09-30;Sandecja Nowy Sącz;Śląsk Wrocław
+2017-09-30;Wisła Kraków;Jagiellonia Białystok
+2017-09-30;Wisła Płock;Termalica Bruk-Bet Nieciecza
+2017-10-14;Termalica Bruk-Bet Nieciecza;Arka Gdynia
+2017-10-14;Cracovia;Pogoń Szczecin
+2017-10-14;Jagiellonia Białystok;Lech Poznań
+2017-10-14;Zagłębie Lubin;Górnik Zabrze
+2017-10-14;Korona Kielce;Wisła Płock
+2017-10-14;Legia Warszawa;Lechia Gdańsk
+2017-10-14;Piast Gliwice;Sandecja Nowy Sącz
+2017-10-14;Śląsk Wrocław;Wisła Kraków
+2017-10-21;Arka Gdynia;Jagiellonia Białystok
+2017-10-21;Górnik Zabrze;Korona Kielce
+2017-10-21;Zagłębie Lubin;Piast Gliwice
+2017-10-21;Lechia Gdańsk;Lech Poznań
+2017-10-21;Pogoń Szczecin;Termalica Bruk-Bet Nieciecza
+2017-10-21;Sandecja Nowy Sącz;Cracovia
+2017-10-21;Wisła Kraków;Legia Warszawa
+2017-10-21;Wisła Płock;Śląsk Wrocław
+2017-10-28;Cracovia;Termalica Bruk-Bet Nieciecza
+2017-10-28;Jagiellonia Białystok;Zagłębie Lubin
+2017-10-28;Lech Poznań;Wisła Kraków
+2017-10-28;Lechia Gdańsk;Korona Kielce
+2017-10-28;Legia Warszawa;Arka Gdynia
+2017-10-28;Piast Gliwice;Wisła Płock
+2017-10-28;Sandecja Nowy Sącz;Górnik Zabrze
+2017-10-28;Śląsk Wrocław;Pogoń Szczecin
+2017-11-04;Arka Gdynia;Lechia Gdańsk
+2017-11-04;Termalica Bruk-Bet Nieciecza;Piast Gliwice
+2017-11-04;Górnik Zabrze;Lech Poznań
+2017-11-04;Zagłębie Lubin;Cracovia
+2017-11-04;Korona Kielce;Śląsk Wrocław
+2017-11-04;Pogoń Szczecin;Legia Warszawa
+2017-11-04;Wisła Kraków;Sandecja Nowy Sącz
+2017-11-04;Wisła Płock;Jagiellonia Białystok
+2017-11-18;Jagiellonia Białystok;Termalica Bruk-Bet Nieciecza
+2017-11-18;Zagłębie Lubin;Korona Kielce
+2017-11-18;Lechia Gdańsk;Wisła Płock
+2017-11-18;Legia Warszawa;Górnik Zabrze
+2017-11-18;Piast Gliwice;Cracovia
+2017-11-18;Sandecja Nowy Sącz;Lech Poznań
+2017-11-18;Śląsk Wrocław;Arka Gdynia
+2017-11-18;Wisła Kraków;Pogoń Szczecin
+2017-11-25;Arka Gdynia;Sandecja Nowy Sącz
+2017-11-25;Termalica Bruk-Bet Nieciecza;Wisła Kraków
+2017-11-25;Cracovia;Lechia Gdańsk
+2017-11-25;Górnik Zabrze;Jagiellonia Białystok
+2017-11-25;Korona Kielce;Legia Warszawa
+2017-11-25;Lech Poznań;Wisła Płock
+2017-11-25;Pogoń Szczecin;Piast Gliwice
+2017-11-25;Śląsk Wrocław;Zagłębie Lubin
+2017-12-02;Cracovia;Korona Kielce
+2017-12-02;Jagiellonia Białystok;Pogoń Szczecin
+2017-12-02;Zagłębie Lubin;Termalica Bruk-Bet Nieciecza
+2017-12-02;Lechia Gdańsk;Śląsk Wrocław
+2017-12-02;Piast Gliwice;Lech Poznań
+2017-12-02;Sandecja Nowy Sącz;Legia Warszawa
+2017-12-02;Wisła Kraków;Górnik Zabrze
+2017-12-02;Wisła Płock;Arka Gdynia
+2017-12-09;Górnik Zabrze;Lechia Gdańsk
+2017-12-09;Korona Kielce;Arka Gdynia
+2017-12-09;Lech Poznań;Cracovia
+2017-12-09;Legia Warszawa;Termalica Bruk-Bet Nieciecza
+2017-12-09;Pogoń Szczecin;Zagłębie Lubin
+2017-12-09;Sandecja Nowy Sącz;Jagiellonia Białystok
+2017-12-09;Śląsk Wrocław;Piast Gliwice
+2017-12-09;Wisła Kraków;Wisła Płock
+2017-12-13;Arka Gdynia;Górnik Zabrze
+2017-12-13;Termalica Bruk-Bet Nieciecza;Śląsk Wrocław
+2017-12-13;Cracovia;Wisła Kraków
+2017-12-13;Jagiellonia Białystok;Korona Kielce
+2017-12-13;Zagłębie Lubin;Lech Poznań
+2017-12-13;Lechia Gdańsk;Pogoń Szczecin
+2017-12-13;Piast Gliwice;Legia Warszawa
+2017-12-13;Wisła Płock;Sandecja Nowy Sącz
+2017-12-16;Górnik Zabrze;Cracovia
+2017-12-16;Korona Kielce;Piast Gliwice
+2017-12-16;Lech Poznań;Termalica Bruk-Bet Nieciecza
+2017-12-16;Legia Warszawa;Wisła Płock
+2017-12-16;Pogoń Szczecin;Arka Gdynia
+2017-12-16;Sandecja Nowy Sącz;Lechia Gdańsk
+2017-12-16;Śląsk Wrocław;Jagiellonia Białystok
+2017-12-16;Wisła Kraków;Zagłębie Lubin
+2018-02-10;Arka Gdynia;Lech Poznań
+2018-02-10;Termalica Bruk-Bet Nieciecza;Korona Kielce
+2018-02-10;Cracovia;Śląsk Wrocław
+2018-02-10;Zagłębie Lubin;Legia Warszawa
+2018-02-10;Lechia Gdańsk;Wisła Kraków
+2018-02-10;Piast Gliwice;Jagiellonia Białystok
+2018-02-10;Pogoń Szczecin;Sandecja Nowy Sącz
+2018-02-10;Wisła Płock;Górnik Zabrze
+2018-02-17;Górnik Zabrze;Termalica Bruk-Bet Nieciecza
+2018-02-17;Jagiellonia Białystok;Cracovia
+2018-02-17;Lech Poznań;Pogoń Szczecin
+2018-02-17;Lechia Gdańsk;Piast Gliwice
+2018-02-17;Legia Warszawa;Śląsk Wrocław
+2018-02-17;Sandecja Nowy Sącz;Korona Kielce
+2018-02-17;Wisła Kraków;Arka Gdynia
+2018-02-17;Wisła Płock;Zagłębie Lubin
+2018-02-24;Termalica Bruk-Bet Nieciecza;Sandecja Nowy Sącz
+2018-02-24;Cracovia;Legia Warszawa
+2018-02-24;Jagiellonia Białystok;Lechia Gdańsk
+2018-02-24;Zagłębie Lubin;Arka Gdynia
+2018-02-24;Korona Kielce;Lech Poznań
+2018-02-24;Piast Gliwice;Wisła Kraków
+2018-02-24;Pogoń Szczecin;Wisła Płock
+2018-02-24;Śląsk Wrocław;Górnik Zabrze
+2018-02-28;Arka Gdynia;Piast Gliwice
+2018-02-28;Górnik Zabrze;Pogoń Szczecin
+2018-02-28;Lech Poznań;Śląsk Wrocław
+2018-02-28;Lechia Gdańsk;Termalica Bruk-Bet Nieciecza
+2018-02-28;Legia Warszawa;Jagiellonia Białystok
+2018-02-28;Sandecja Nowy Sącz;Zagłębie Lubin
+2018-02-28;Wisła Kraków;Korona Kielce
+2018-02-28;Wisła Płock;Cracovia
+2018-03-03;Termalica Bruk-Bet Nieciecza;Wisła Płock
+2018-03-03;Cracovia;Arka Gdynia
+2018-03-03;Jagiellonia Białystok;Wisła Kraków
+2018-03-03;Zagłębie Lubin;Lechia Gdańsk
+2018-03-03;Korona Kielce;Pogoń Szczecin
+2018-03-03;Legia Warszawa;Lech Poznań
+2018-03-03;Piast Gliwice;Górnik Zabrze
+2018-03-03;Śląsk Wrocław;Sandecja Nowy Sącz
+2018-03-10;Arka Gdynia;Termalica Bruk-Bet Nieciecza
+2018-03-10;Górnik Zabrze;Zagłębie Lubin
+2018-03-10;Lech Poznań;Jagiellonia Białystok
+2018-03-10;Lechia Gdańsk;Legia Warszawa
+2018-03-10;Pogoń Szczecin;Cracovia
+2018-03-10;Sandecja Nowy Sącz;Piast Gliwice
+2018-03-10;Wisła Kraków;Śląsk Wrocław
+2018-03-10;Wisła Płock;Korona Kielce
+2018-03-17;Termalica Bruk-Bet Nieciecza;Pogoń Szczecin
+2018-03-17;Cracovia;Sandecja Nowy Sącz
+2018-03-17;Jagiellonia Białystok;Arka Gdynia
+2018-03-17;Korona Kielce;Górnik Zabrze
+2018-03-17;Lech Poznań;Lechia Gdańsk
+2018-03-17;Legia Warszawa;Wisła Kraków
+2018-03-17;Piast Gliwice;Zagłębie Lubin
+2018-03-17;Śląsk Wrocław;Wisła Płock
+2018-03-31;Arka Gdynia;Legia Warszawa
+2018-03-31;Termalica Bruk-Bet Nieciecza;Cracovia
+2018-03-31;Górnik Zabrze;Sandecja Nowy Sącz
+2018-03-31;Zagłębie Lubin;Jagiellonia Białystok
+2018-03-31;Korona Kielce;Lechia Gdańsk
+2018-03-31;Pogoń Szczecin;Śląsk Wrocław
+2018-03-31;Wisła Kraków;Lech Poznań
+2018-03-31;Wisła Płock;Piast Gliwice
+2018-04-07;Cracovia;Zagłębie Lubin
+2018-04-07;Jagiellonia Białystok;Wisła Płock
+2018-04-07;Lech Poznań;Górnik Zabrze
+2018-04-07;Lechia Gdańsk;Arka Gdynia
+2018-04-07;Legia Warszawa;Pogoń Szczecin
+2018-04-07;Piast Gliwice;Termalica Bruk-Bet Nieciecza
+2018-04-07;Sandecja Nowy Sącz;Wisła Kraków
+2018-04-07;Śląsk Wrocław;Korona Kielce
