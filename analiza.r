@@ -5,14 +5,11 @@ library(lubridate)
 
 mecze <- readRDS("mecze.RDS")
 
-theme_set(theme_minimal())
-
-# średnia ze wszystkich meczy pomiędzy drużynami
+# średnia ze wszystkich meczy pomiędzy
 wynik_gosp_gosc <- mecze %>%
   group_by(gosp, gosc) %>%
   summarise(mb_gosc = mean(b_gosc), mb_gosp = mean(b_gosp)) %>%
   ungroup() %>%
-  # kto wygrywał - gospodarz czy gosc?
   mutate(wygrana_gospodarza = ifelse(mb_gosp>mb_gosc, "Gospodarz",
                                      ifelse(mb_gosp==mb_gosc, "Remis",
                                             "Gość")))
@@ -20,14 +17,12 @@ wynik_gosp_gosc <- mecze %>%
 wynik_gosp_gosc %>%
   ggplot() +
   geom_tile(aes(gosc, gosp, fill=wygrana_gospodarza), color="black") +
-  theme(axis.text.x = element_text(angle = 90, hjust=1)) +
+  theme(axis.text.x = element_text(angle = 90)) +
   labs(x = "Gość", y="Gospodarz", fill="Zwycięzca")
 
-# procentowy rozklad zwyciest gospodarzy, gosci i remisow
 round(100 * prop.table(table(wynik_gosp_gosc$wygrana_gospodarza)), 1)
 
-
-# kto najczęściej wygrywa i przegrywa - druzyny
+# kto najczęściej wygrywa
 wygrani <- mecze %>%
   mutate(wygrany = ifelse(b_gosp>b_gosc, gosp,
                           ifelse(b_gosp==b_gosc, "Remis",
@@ -75,7 +70,7 @@ mecze %>%
   ungroup() %>%
   ggplot() +
   geom_tile(aes(b_a, b_b, fill=p), color="black") +
-  geom_text(aes(b_a, b_b, label=paste0(round(p, 1), "%")), color="white", size=2) +
+  geom_text(aes(b_a, b_b, label=paste0(round(p, 2), "%")), color="white") +
   facet_wrap(~sezon)
 
 # liczba bramek na mecz wg sezonu
@@ -119,7 +114,6 @@ historia_t_fct <- historia_t %>%
   filter(d=="wygrany") %>%
   arrange(p)
 
-# wszystkie sezozny
 historia_t %>%
   mutate(druzyna = factor(druzyna, levels = historia_t_fct$druzyna)) %>%
   ggplot() +
@@ -127,14 +121,13 @@ historia_t %>%
   geom_hline(yintercept = c(20, 50, 75), color = "black") +
   coord_flip()
 
-# ostatni sezon - jak szlo druzynom podczas sezonu?
 historia %>%
-  filter(sezon == "2016-17") %>%
+  filter(sezon == "2008-09") %>%
   ggplot() +
   geom_point(aes(data, d, color=d)) +
   facet_wrap(~druzyna)
 
-# procentowy udzial zwyciestw i porazek dla kazdej z druzyn wg sezonow
+
 historia %>%
   count(sezon, druzyna, d) %>%
   ungroup() %>%
@@ -145,5 +138,4 @@ historia %>%
   ggplot() +
   geom_bar(aes(sezon, p, fill=d), stat="identity") +
   geom_hline(yintercept = c(20, 50, 75), color = "black") +
-  coord_flip() +
-  facet_wrap(~druzyna)
+  coord_flip() + facet_wrap(~druzyna)

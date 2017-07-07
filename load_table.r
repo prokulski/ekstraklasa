@@ -1,3 +1,6 @@
+## Skrypt pobiera dane z http://www.hppn.pl o wynikach meczy rozegranych w ramach
+## Ekstraklasy w latach 2008-2017 i zapisuje do lokalnego pliku .RDS
+
 setwd("~/RProjects/ekstraklasa")
 
 library(tidyverse)
