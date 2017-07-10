@@ -13,6 +13,40 @@
 ##
 
 
+# podejscie w zakresach
+# elo_d = seq(50, 150, 10)
+# elo_h = seq(50, 120, 10)
+# n_prob = 5
+#
+#   elo_d elo_h accuracy
+# 1   120   120 45.17617
+# 2    90   120 44.29530
+# 3    60   120 44.12752
+# 4    90   110 43.83389
+# 5   110   120 43.83389
+# 6    50   120 43.79195
+
+
+# podejscie w zakresach
+# elo_d = seq(50, 300, 25)
+# elo_h = seq(100, 200, 25)
+# n_prob = 1
+#   elo_d elo_h accuracy
+# 1   125   175 47.39933
+# 2    75   200 47.14765
+# 3    50   175 47.10570
+# 4   100   150 47.06376
+# 5   100   200 47.02181
+# 6    75   150 46.97987
+
+
+# podejscie w zakresach
+# elo_d = seq(0, 300, 5)
+# elo_h = seq(0, 300, 5)
+# n_prob = 1000
+
+
+
 setwd("~/RProjects/ekstraklasa")
 
 library(tidyverse)
@@ -32,12 +66,11 @@ mecze <- mecze %>% mutate(n = row_number())
 ####  FIND GOOD PARAMS      ####
 ################################
 
-elo_params <- expand.grid(elo_d = seq(50, 150, 10),
-                          elo_h = seq(50, 120, 10))
+elo_params <- expand.grid(elo_d = seq(0, 300, 5),
+                          elo_h = seq(0, 300, 5))
 elo_params$accuracy <- NA
 
-
-n_prob <- 5
+n_prob <- 1000
 
 l_params <- nrow(elo_params)
 
@@ -52,11 +85,12 @@ for(k in 1:l_params) {
   elo_h <- as.numeric(elo_params[k, "elo_h"])
 
   correct_predict <- 0
-  cat("\n")
+  #   cat("\n")
+  cat(paste("\rk =", k))
 
   # symulacja - każdy kolejny mecz w lidze
   for(n_mecz in 1:nrow(mecze)) {
-    cat(paste("\rk =", k, "/", l_params, "; n_mecz =", n_mecz, "/ 2384"))
+    #      cat(paste("\rk =", k, "/", l_params, "; n_mecz =", n_mecz, "/ 2384"))
 
 
     # wybór grających drużyn
@@ -106,3 +140,8 @@ elo_params$accuracy <- 100 * elo_params$accuracy / nrow(mecze)
 # jakie parametry dały nalepsze wyniki?
 elo_params %>% arrange(desc(accuracy)) %>% head()
 
+elo_params %>%
+  ggplot() +
+  geom_tile(aes(elo_d, elo_h, fill = cut(accuracy, 5)))
+
+saveRDS(elo_params, file="elo_params.rds")
