@@ -11,8 +11,8 @@ rm(list=ls())
 source("elo_functions.r")
 
 # te parametry trzeba znaleźć
-elo_draw <- 0 # szansa na remis; jesli =0 to będzie użyty rnorm(1, 97.3, 2)
-elo_home <- 0 # przewada gospodarzy; jesli =0 to będzie użyty rnorm(1, 61, 1)
+elo_draw <- 120 # szansa na remis; jesli =0 to będzie użyty rnorm(1, 97.3, 2)
+elo_home <- 165 # przewada gospodarzy; jesli =0 to będzie użyty rnorm(1, 61, 1)
 
 mecze <- readRDS("mecze.RDS")
 mecze <- mecze %>% mutate(n = row_number())
@@ -112,8 +112,30 @@ sum(diag(table(mecze_sym$wygrany_real, mecze_sym$wygrany_sym)))/nrow(mecze_sym)
 # przebieg historii ELO
 elo_tab_hist %>%
   ggplot() +
-  geom_line(aes(n, elo, color=team)) +
+  geom_line(aes(n, elo, color=team), show.legend = FALSE) +
+  labs(x = "n-ty mecz", y="ELO") +
   facet_wrap(~team)
 ################################
 
+
+# kto zyskał, a kto stracił?
+# początkowe ELO vs ELO po rozgrywkach
+elo_tab_pocz <- data_frame(team = c("Wisła Kraków", "Legia Warszawa", "Lech Poznań", "Cracovia", "GKS Bełchatów", "Ruch Chorzów", "ŁKS Łódź", "Górnik Zabrze", "Polonia Bytom", "Odra Wodzisław Śl.", "Arka Gdynia", "Polonia Warszawa", "Piast Gliwice", "Lechia Gdańsk", "Śląsk Wrocław", "Jagiellonia Białystok", "Korona Kielce", "Zagłębie Lubin", "Widzew Łódź", "Podbeskidzie Bielsko-Biała", "Pogoń Szczecin", "Zawisza Bydgoszcz", "Górnik Łęczna", "Termalica Bruk-Bet Nieciecza", "Wisła Płock"),
+                           elo = c(1565, 1485, 1426, 1333, 1326, 1288, 1285, 1257, 1252, 1250, 1229, 1229, 1229, 1229, 1229, 1211, 1254, 1254, 1254, 1254, 1254, 1254, 1254, 1254, 1254))
+
+elo_tab <- left_join(elo_tab, elo_tab_pocz, by="team")
+
+elo_tab$delta <- elo_tab$elo.x - elo_tab$elo.y
+
+elo_tab %>%
+  arrange(delta) %>%
+  mutate(team = factor(team, levels = team)) %>%
+  ggplot() +
+  geom_bar(aes(team, delta, fill=ifelse(delta > 0, "up", "down")),
+           color = "black", stat="identity", show.legend = FALSE) +
+  geom_text(aes(team, delta, label=delta), hjust = 1.1) +
+  coord_flip() +
+  scale_fill_manual(values = c("up"="green", "down"="red")) +
+  labs(x="Drużyna", y="Zmian ELO na przestrzeni wszystkich sezonów") +
+  theme_minimal()
 

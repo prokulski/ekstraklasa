@@ -42,9 +42,12 @@ findWinner <- function(team_a, team_b, elo_a, elo_b,
   # eloDraw indicates how likely draws are.
   # eloDraw = 97.3 +/- 2
 
-  # eloAdvantage <- rnorm(1, 32.8, 4) # eloAdvantage = 32.8 +/- 4
-  if(eloAdvantage == 0) eloAdvantage <- rnorm(1, 61, 1)
-  if(eloDraw ==0) eloDraw <- rnorm(1, 97.3, 2) # eloDraw = 97.3 +/- 2
+  # eloAdvantage <- rnorm(1, 32.8, 4) # eloAdvantage = 32.8 +/- 2
+  if(eloAdvantage == 0) eloAdvantage <- 32.8
+  eloAdvantage <- rnorm(1, eloAdvantage, 2)
+
+  if(eloDraw ==0) eloDraw <- 97.3
+  eloDraw <- rnorm(1, eloDraw, 2) # eloDraw = 97.3 +/- 2
 
   # wygrywa team.a - gospodarz
   p_a <- f(elo_b - elo_a - eloAdvantage + eloDraw)
@@ -148,6 +151,7 @@ playMatch <- function(team_a, team_b, elo_a, elo_b,
   # losowanie zwycięzcy
   for(i in 1:n_repeats) {
     t <- findWinner(team_a, team_b, elo_a, elo_b, elo_draw, elo_home)
+
     if(t==team_a) a <- a + 1
     if(t==team_b) b <- b + 1
     if(t=="remis") r <- r + 1
